@@ -83,7 +83,7 @@ export class CalendarService {
     const body = JSON.stringify(user);
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://people.eecs.ku.edu/~jfustos/cgi-bin/Calendar.cgi', body, {
+    return this.http.post('https://people.eecs.ku.edu/~jfustos/cgi-bin/Calendar.cgi', body, {
       headers: headers
     })
       .map((data: Response) => data.json())
